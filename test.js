@@ -1,6 +1,6 @@
 const img = document.createElement('img');
 img.id = 'myImg';
-img.src = 'path/to/image.jpg'; // Replace with your image source
+img.src = '../reverse.PNG/img.jpg'; // Replace with your image source
 
 // Append the image to the body (or another container)
 document.body.appendChild(img);

